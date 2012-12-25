@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head1> College Football
+<title>Welcome</title>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="http://www.apppax.com/assets/css/apppax.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="http://www.apppax.com/assets/js/apppax.loader.js"></script>
+    </head>
+<script type="text/javascript">
+    head.js.apply(head.js, AppPaxLoader.fs);
+    head.ready( function() {
+        var a = new AppPax.App({projectID: "75", app: function(){
+            var b = new AppPax.LoginView({el: "#mydiv"});
+            var c = new AppPax.PrivateEmailForm({el:"#privem", model:new AppPax.PrivateEmail()});
+            b.render();
+            c.render();
+        }});
+    });
+</script>
+<body>
+<hr>
+    <div id="mydiv"></div>
+    <div id="privem"></div>
+</body>
+</html>
